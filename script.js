@@ -17,7 +17,7 @@ function shiftHandler(num){
 }
 
 function cypherInputHandler(val){
-    let stringArr = val.split('');
+    let stringArr = val.toLowerCase().split('');
     let newString = ''
     for(let i=0; i<stringArr.length; i++){
         for(let j=0; j<alphabetArr.length; j++){
@@ -33,7 +33,7 @@ function cypherInputHandler(val){
 }
 
 function plainInputHandler(val){
-    let stringArr = val.split('');
+    let stringArr = val.toLowerCase().split('');
     let newString = ''
     for(let i=0; i<stringArr.length; i++){
         for(let j=0; j<alphabetArr.length; j++){
