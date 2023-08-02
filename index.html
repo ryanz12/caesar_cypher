@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="plaintextContainer">
+            <h2>Plaintext</h2>
+            <textarea id="plaintextInput" cols="30" rows="10" onkeydown="plainInputHandler(this.value)"></textarea>
+        </div>
+        <div class="shiftContainer">
+            <h5>SHIFT</h2>
+            <input type="number" id="shiftInput" min="1" max="25" value="1" onchange="shiftHandler(this.value);">
+        </div>
+        <div class="cyphertextContainer">
+            <h2>Cyphertext</h2>
+            <textarea id="cyphertextInput" cols="30" rows="10" onkeydown="cypherInputHandler(this.value)"></textarea>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

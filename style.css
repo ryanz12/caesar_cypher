@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h2, h5 {
+    color: #333;
+    margin-top: 0;
+}
+
+.plaintextContainer, .cyphertextContainer, .shiftContainer {
+    margin-bottom: 20px;
+}
+
+.plaintextContainer, .cyphertextContainer {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+textarea, input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+    resize: vertical;
+}
+
+textarea {
+    height: 20vh;
+    resize: none;
+}
+
+textarea:focus, input[type="number"]:focus {
+    outline: none;
+    background-color: #f0f0f0;
+}
+
+.cyphertextContainer {
+    background-color: #f2f2f2;
+}
+
+.container > div {
+    margin-bottom: 15px;
+}
+
+.shiftContainer input {
+    text-align: center;
+}
+
+.plaintextContainer textarea, .cyphertextContainer textarea {
+    text-align: left;
+}
+
+.plaintextContainer h2, .cyphertextContainer h2, .shiftContainer h5 {
+    margin-bottom: 5px;
+}
